@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1630116397435" clover="3.2.0">
-  <project timestamp="1630116397435" name="All files">
-    <metrics statements="52" coveredstatements="42" conditionals="18" coveredconditionals="16" methods="6" coveredmethods="5" elements="76" coveredelements="63" complexity="0" loc="52" ncloc="52" packages="2" files="2" classes="2"/>
+<coverage generated="1630269952012" clover="3.2.0">
+  <project timestamp="1630269952012" name="All files">
+    <metrics statements="65" coveredstatements="48" conditionals="22" coveredconditionals="16" methods="10" coveredmethods="7" elements="97" coveredelements="71" complexity="0" loc="65" ncloc="65" packages="3" files="3" classes="3"/>
     <package name="fccCashRegister">
       <metrics statements="35" coveredstatements="35" conditionals="14" coveredconditionals="14" methods="3" coveredmethods="3"/>
       <file name="cashRegister.js" path="/Users/alexolivares/Desktop/items/algos/questions/JavaScript/fccCashRegister/cashRegister.js">
@@ -64,6 +64,25 @@
         <line num="40" count="18" type="stmt"/>
         <line num="43" count="1" type="stmt"/>
         <line num="44" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="lsValidAnagram">
+      <metrics statements="13" coveredstatements="6" conditionals="4" coveredconditionals="0" methods="4" coveredmethods="2"/>
+      <file name="lcValidAnagram.js" path="/Users/alexolivares/Desktop/items/algos/questions/JavaScript/lsValidAnagram/lcValidAnagram.js">
+        <metrics statements="13" coveredstatements="6" conditionals="4" coveredconditionals="0" methods="4" coveredmethods="2"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="34" count="28" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="37" count="14" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
       </file>
     </package>
   </project>
