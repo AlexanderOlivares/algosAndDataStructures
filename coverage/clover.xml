@@ -1,46 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1630373720869" clover="3.2.0">
-  <project timestamp="1630373720869" name="All files">
-    <metrics statements="114" coveredstatements="87" conditionals="42" coveredconditionals="32" methods="15" coveredmethods="11" elements="171" coveredelements="130" complexity="0" loc="114" ncloc="114" packages="6" files="6" classes="6"/>
+<coverage generated="1630617903354" clover="3.2.0">
+  <project timestamp="1630617903354" name="All files">
+    <metrics statements="115" coveredstatements="88" conditionals="44" coveredconditionals="34" methods="16" coveredmethods="12" elements="175" coveredelements="134" complexity="0" loc="115" ncloc="115" packages="7" files="7" classes="7"/>
     <package name="fccCashRegister">
-      <metrics statements="35" coveredstatements="35" conditionals="14" coveredconditionals="14" methods="3" coveredmethods="3"/>
+      <metrics statements="30" coveredstatements="30" conditionals="14" coveredconditionals="14" methods="3" coveredmethods="3"/>
       <file name="cashRegister.js" path="/Users/alexolivares/Desktop/items/algos/questions/JavaScript/fccCashRegister/cashRegister.js">
-        <metrics statements="35" coveredstatements="35" conditionals="14" coveredconditionals="14" methods="3" coveredmethods="3"/>
-        <line num="33" count="10" type="stmt"/>
-        <line num="45" count="10" type="stmt"/>
-        <line num="47" count="10" type="stmt"/>
-        <line num="49" count="10" type="stmt"/>
-        <line num="51" count="10" type="stmt"/>
-        <line num="53" count="90" type="stmt"/>
-        <line num="56" count="10" type="cond" truecount="2" falsecount="0"/>
-        <line num="59" count="8" type="stmt"/>
-        <line num="64" count="8" type="stmt"/>
-        <line num="65" count="72" type="stmt"/>
-        <line num="66" count="72" type="stmt"/>
-        <line num="68" count="72" type="cond" truecount="4" falsecount="0"/>
-        <line num="69" count="20" type="stmt"/>
-        <line num="71" count="20" type="cond" truecount="2" falsecount="0"/>
-        <line num="72" count="140" type="stmt"/>
-        <line num="73" count="140" type="stmt"/>
-        <line num="74" count="140" type="stmt"/>
-        <line num="77" count="20" type="stmt"/>
-        <line num="78" count="20" type="stmt"/>
-        <line num="80" count="20" type="cond" truecount="2" falsecount="0"/>
-        <line num="81" count="6" type="stmt"/>
-        <line num="82" count="6" type="stmt"/>
-        <line num="89" count="32" type="cond" truecount="2" falsecount="0"/>
-        <line num="90" count="2" type="stmt"/>
-        <line num="91" count="2" type="stmt"/>
-        <line num="92" count="2" type="stmt"/>
-        <line num="96" count="6" type="cond" truecount="2" falsecount="0"/>
-        <line num="97" count="2" type="stmt"/>
-        <line num="100" count="6" type="stmt"/>
-        <line num="105" count="1" type="stmt"/>
-        <line num="119" count="1" type="stmt"/>
-        <line num="133" count="1" type="stmt"/>
-        <line num="147" count="1" type="stmt"/>
-        <line num="161" count="1" type="stmt"/>
-        <line num="175" count="1" type="stmt"/>
+        <metrics statements="30" coveredstatements="30" conditionals="14" coveredconditionals="14" methods="3" coveredmethods="3"/>
+        <line num="33" count="5" type="stmt"/>
+        <line num="45" count="5" type="stmt"/>
+        <line num="47" count="5" type="stmt"/>
+        <line num="49" count="5" type="stmt"/>
+        <line num="51" count="5" type="stmt"/>
+        <line num="53" count="45" type="stmt"/>
+        <line num="56" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="59" count="4" type="stmt"/>
+        <line num="64" count="4" type="stmt"/>
+        <line num="65" count="36" type="stmt"/>
+        <line num="66" count="36" type="stmt"/>
+        <line num="68" count="36" type="cond" truecount="4" falsecount="0"/>
+        <line num="69" count="10" type="stmt"/>
+        <line num="71" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="72" count="70" type="stmt"/>
+        <line num="73" count="70" type="stmt"/>
+        <line num="74" count="70" type="stmt"/>
+        <line num="77" count="10" type="stmt"/>
+        <line num="78" count="10" type="stmt"/>
+        <line num="80" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="81" count="3" type="stmt"/>
+        <line num="82" count="3" type="stmt"/>
+        <line num="89" count="16" type="cond" truecount="2" falsecount="0"/>
+        <line num="90" count="1" type="stmt"/>
+        <line num="91" count="1" type="stmt"/>
+        <line num="92" count="1" type="stmt"/>
+        <line num="96" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="97" count="1" type="stmt"/>
+        <line num="100" count="3" type="stmt"/>
+        <line num="103" count="1" type="stmt"/>
       </file>
     </package>
     <package name="lcDefuseTheBomb">
@@ -104,6 +99,18 @@
         <line num="40" count="18" type="stmt"/>
         <line num="43" count="1" type="stmt"/>
         <line num="44" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="lcRegExpMatching">
+      <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="lcRegExpMatching.js" path="/Users/alexolivares/Desktop/items/algos/questions/JavaScript/lcRegExpMatching/lcRegExpMatching.js">
+        <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="8" type="stmt"/>
+        <line num="31" count="8" type="stmt"/>
+        <line num="33" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="35" count="6" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
       </file>
     </package>
     <package name="lcReverseOnlyLetters">

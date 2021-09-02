@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for lcKLengthApart/lcKLengthApart.js</title>
+    <title>Code coverage report for lcRegExpMatching/lcRegExpMatching.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -19,20 +19,20 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">lcKLengthApart</a> lcKLengthApart.js</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">lcRegExpMatching</a> lcRegExpMatching.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>12/12</span>
+                <span class='fraction'>7/7</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>8/8</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>10/10</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
@@ -95,9 +95,13 @@
 <a name='L36'></a><a href='#L36'>36</a>
 <a name='L37'></a><a href='#L37'>37</a>
 <a name='L38'></a><a href='#L38'>38</a>
-<a name='L39'></a><a href='#L39'>39</a>
-<a name='L40'></a><a href='#L40'>40</a>
-<a name='L41'></a><a href='#L41'>41</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L39'></a><a href='#L39'>39</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -119,38 +123,36 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-yes">29x</span>
-<span class="cline-any cline-yes">11x</span>
 <span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">26x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// LeetCode 1437. Check If All 1's Are at Least K Places Away
-// tests in lcReverseOnlyLetters.test.js
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// LeetCode 10. Regular Expression Matching
+// tests in lcRegExpMatching.test.js
 &nbsp;
 /* QUESTION:
 &nbsp;
-Given an array nums of 0s and 1s and an integer k,
-return True if all 1's are at least k places away from each other,
-otherwise return False.
+Given an input string s and a pattern p, implement regular expression matching
+with support for '.' and '*' where:
+&nbsp;
+'.' Matches any single character.​​​​
+'*' Matches zero or more of the preceding element.
+The matching should cover the entire input string (not partial).
 &nbsp;
 Constraints:
 &nbsp;
-1 &lt;= nums.length &lt;= 105
-0 &lt;= k &lt;= nums.length
-nums[i] is 0 or 1
+1 &lt;= s.length &lt;= 20
+1 &lt;= p.length &lt;= 30
+s contains only lowercase English letters.
+p contains only lowercase English letters, '.', and '*'.
+It is guaranteed for each appearance of the character '*', 
+there will be a previous valid character to match.
 &nbsp;
 */
 &nbsp;
@@ -158,25 +160,17 @@ nums[i] is 0 or 1
 // SOLUTION #1
 ///////////////////////
 &nbsp;
-const kLengthApart = (nums, k) =&gt; {
-  let left = 0;
+const isMatch = (s, p) =&gt; {
+  let reg = new RegExp(`${p}`);
 &nbsp;
-  // i is the right pointer
-  for (let i = 1; i &lt; nums.length; i++) {
-    if (nums[left] === 1 &amp;&amp; nums[i] === 1) {
-      if (i - left &lt;= k) return false;
-      left = i;
-    }
+  let match = s.match(reg);
 &nbsp;
-    if (nums[left] !== 1) {
-      left++;
-    }
-  }
+  if (!match) return false;
 &nbsp;
-  return true;
+  return match[0] === s;
 };
 &nbsp;
-module.exports = kLengthApart;
+module.exports = isMatch;
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
