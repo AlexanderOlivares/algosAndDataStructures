@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1630617903354" clover="3.2.0">
-  <project timestamp="1630617903354" name="All files">
-    <metrics statements="115" coveredstatements="88" conditionals="44" coveredconditionals="34" methods="16" coveredmethods="12" elements="175" coveredelements="134" complexity="0" loc="115" ncloc="115" packages="7" files="7" classes="7"/>
+<coverage generated="1630708826348" clover="3.2.0">
+  <project timestamp="1630708826348" name="All files">
+    <metrics statements="124" coveredstatements="97" conditionals="46" coveredconditionals="36" methods="18" coveredmethods="14" elements="188" coveredelements="147" complexity="0" loc="124" ncloc="124" packages="8" files="8" classes="8"/>
     <package name="fccCashRegister">
       <metrics statements="30" coveredstatements="30" conditionals="14" coveredconditionals="14" methods="3" coveredmethods="3"/>
       <file name="cashRegister.js" path="/Users/alexolivares/Desktop/items/algos/questions/JavaScript/fccCashRegister/cashRegister.js">
@@ -60,6 +60,21 @@
         <line num="54" count="20" type="stmt"/>
         <line num="57" count="5" type="cond" truecount="2" falsecount="0"/>
         <line num="60" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="lcFindMedianSortedArray">
+      <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+      <file name="lcFindMedianSortedArray.js" path="/Users/alexolivares/Desktop/items/algos/questions/JavaScript/lcFindMedianSortedArray/lcFindMedianSortedArray.js">
+        <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="39" type="stmt"/>
+        <line num="26" count="7" type="stmt"/>
+        <line num="28" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="29" count="5" type="stmt"/>
+        <line num="32" count="2" type="stmt"/>
+        <line num="33" count="2" type="stmt"/>
+        <line num="35" count="2" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
       </file>
     </package>
     <package name="lcKLengthApart">
