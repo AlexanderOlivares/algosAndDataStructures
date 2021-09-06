@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1630708826348" clover="3.2.0">
-  <project timestamp="1630708826348" name="All files">
-    <metrics statements="124" coveredstatements="97" conditionals="46" coveredconditionals="36" methods="18" coveredmethods="14" elements="188" coveredelements="147" complexity="0" loc="124" ncloc="124" packages="8" files="8" classes="8"/>
+<coverage generated="1630948489084" clover="3.2.0">
+  <project timestamp="1630948489084" name="All files">
+    <metrics statements="137" coveredstatements="110" conditionals="50" coveredconditionals="40" methods="19" coveredmethods="15" elements="206" coveredelements="165" complexity="0" loc="137" ncloc="137" packages="9" files="9" classes="9"/>
     <package name="fccCashRegister">
       <metrics statements="30" coveredstatements="30" conditionals="14" coveredconditionals="14" methods="3" coveredmethods="3"/>
       <file name="cashRegister.js" path="/Users/alexolivares/Desktop/items/algos/questions/JavaScript/fccCashRegister/cashRegister.js">
@@ -91,6 +91,25 @@
         <line num="33" count="2" type="stmt"/>
         <line num="37" count="4" type="stmt"/>
         <line num="40" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="lcLongestSubstringWithoutRepeating">
+      <metrics statements="13" coveredstatements="13" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <file name="lcLongestSubstringWithoutRepeating.js" path="/Users/alexolivares/Desktop/items/algos/questions/JavaScript/lcLongestSubstringWithoutRepeating/lcLongestSubstringWithoutRepeating.js">
+        <metrics statements="13" coveredstatements="13" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="22" count="6" type="stmt"/>
+        <line num="23" count="6" type="stmt"/>
+        <line num="24" count="6" type="stmt"/>
+        <line num="26" count="6" type="stmt"/>
+        <line num="27" count="64" type="cond" truecount="2" falsecount="0"/>
+        <line num="28" count="37" type="stmt"/>
+        <line num="29" count="37" type="stmt"/>
+        <line num="31" count="27" type="stmt"/>
+        <line num="33" count="64" type="stmt"/>
+        <line num="36" count="6" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
       </file>
     </package>
     <package name="lcMaxPower">
