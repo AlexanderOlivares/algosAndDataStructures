@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1631027987010" clover="3.2.0">
-  <project timestamp="1631027987010" name="All files">
-    <metrics statements="145" coveredstatements="118" conditionals="52" coveredconditionals="42" methods="21" coveredmethods="17" elements="218" coveredelements="177" complexity="0" loc="145" ncloc="145" packages="10" files="10" classes="10"/>
+<coverage generated="1631028916890" clover="3.2.0">
+  <project timestamp="1631028916890" name="All files">
+    <metrics statements="154" coveredstatements="119" conditionals="54" coveredconditionals="42" methods="23" coveredmethods="17" elements="231" coveredelements="178" complexity="0" loc="154" ncloc="154" packages="10" files="10" classes="10"/>
     <package name="fccCashRegister">
       <metrics statements="30" coveredstatements="30" conditionals="14" coveredconditionals="14" methods="3" coveredmethods="3"/>
       <file name="cashRegister.js" path="/Users/alexolivares/Desktop/items/algos/questions/JavaScript/fccCashRegister/cashRegister.js">
@@ -94,17 +94,26 @@
       </file>
     </package>
     <package name="lcLongestCommonPrefix">
-      <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+      <metrics statements="17" coveredstatements="9" conditionals="4" coveredconditionals="2" methods="4" coveredmethods="2"/>
       <file name="lcLongestCommonPrefix.js" path="/Users/alexolivares/Desktop/items/algos/questions/JavaScript/lcLongestCommonPrefix/lcLongestCommonPrefix.js">
-        <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <metrics statements="17" coveredstatements="9" conditionals="4" coveredconditionals="2" methods="4" coveredmethods="2"/>
         <line num="23" count="1" type="stmt"/>
-        <line num="24" count="10" type="stmt"/>
-        <line num="26" count="10" type="stmt"/>
-        <line num="27" count="41" type="stmt"/>
-        <line num="28" count="108" type="cond" truecount="2" falsecount="0"/>
-        <line num="29" count="16" type="stmt"/>
-        <line num="33" count="10" type="stmt"/>
-        <line num="36" count="1" type="stmt"/>
+        <line num="24" count="20" type="stmt"/>
+        <line num="26" count="20" type="stmt"/>
+        <line num="27" count="82" type="stmt"/>
+        <line num="28" count="216" type="cond" truecount="2" falsecount="0"/>
+        <line num="29" count="32" type="stmt"/>
+        <line num="33" count="20" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="47" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="57" count="1" type="stmt"/>
       </file>
     </package>
     <package name="lcLongestSubstringWithoutRepeating">

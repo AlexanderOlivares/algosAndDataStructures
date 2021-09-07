@@ -33,4 +33,25 @@ const longestCommonPrefix = strs => {
   return res.join("");
 };
 
+///////////////////////
+// SOLUTION #2
+///////////////////////
+
+const longestCommonPrefix2 = strs => {
+  let sorted = strs.sort((a, b) => a.length - b.length);
+
+  let res = "";
+
+  for (let i = 0; i < sorted[0].length; i++) {
+    for (let j = 1; j < sorted.length; j++) {
+      if (sorted[j][i] !== sorted[0][i]) {
+        return res;
+      }
+    }
+    res += sorted[0][i];
+  }
+
+  return res;
+};
+
 module.exports = longestCommonPrefix;
