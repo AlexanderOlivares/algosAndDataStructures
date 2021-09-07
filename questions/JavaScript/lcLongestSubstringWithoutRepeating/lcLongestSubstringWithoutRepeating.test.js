@@ -9,10 +9,3 @@ test("lengthOfLongestSubstring", () => {
   expect(lengthOfLongestSubstring("pwwkew")).toEqual(3);
   expect(lengthOfLongestSubstring("")).toEqual(0);
 });
-// "dvdf"
-// "au"
-// "ahskciwccskjawojfs"
-// "abcabcbb"
-// "bbbbb"
-// "pwwkew"
-// ""
