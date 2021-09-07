@@ -2,11 +2,12 @@
 
 ##### Folders seperated by language
 
+```
 📦questions
 ┣ 📂JavaScript
 ┣ 📂python
-
-<!-- ┣ 📂cSharp -->
+┣ 📂cSharp
+```
 
 ##### Questions are prefixed by challenge site
 
@@ -17,6 +18,7 @@
 
 ##### Tests for each challenge included in question folder
 
+```
 ┣ 📂python
 ┃ ┗ 📂lcListFromPermuations
 ┃ ┃ ┣ 📜lcListFromPermutations.py
@@ -25,6 +27,7 @@
 ┃ ┣ 📂lcDefuseTheBomb
 ┃ ┃ ┣ 📜lcDefuseTheBomb.js
 ┃ ┃ ┗ 📜lcDefuseTheBomb.test.js
+```
 
 ##### Visit my profiles
 
