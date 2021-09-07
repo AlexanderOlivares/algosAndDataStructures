@@ -1,6 +1,6 @@
-## Alex Olivares Collection of Coding Challenges
+# Alex Olivares Collection of Coding Challenges
 
-##### Folders seperated by language
+### Folders seperated by language
 
 ```
 📦questions
@@ -9,14 +9,14 @@
 ┣ 📂cSharp
 ```
 
-##### Questions are prefixed by challenge site
+### Questions are prefixed by challenge site
 
 - lc - LeetCode
 - cw - Code Wars
 - edbt - Edabit
 - fcc - FreeCodeCamp
 
-##### Tests for each challenge included in question folder
+### Tests for each challenge included in question folder
 
 ```
 ┣ 📂python
@@ -29,9 +29,10 @@
 ┃ ┃ ┗ 📜lcDefuseTheBomb.test.js
 ```
 
-##### Visit my profiles
+### Visit my profiles
 
 ![](https://www.codewars.com/users/AlexanderOlivares/badges/small)
+
 [Codewars profile](https://www.codewars.com/users/AlexanderOlivares)
 
 [LeetCode profile](https://leetcode.com/AlexanderOlivares/)
