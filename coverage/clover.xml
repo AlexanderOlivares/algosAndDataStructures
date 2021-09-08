@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1631048702611" clover="3.2.0">
-  <project timestamp="1631048702611" name="All files">
-    <metrics statements="172" coveredstatements="133" conditionals="58" coveredconditionals="46" methods="25" coveredmethods="18" elements="255" coveredelements="197" complexity="0" loc="172" ncloc="172" packages="11" files="11" classes="11"/>
+<coverage generated="1631134948301" clover="3.2.0">
+  <project timestamp="1631134948301" name="All files">
+    <metrics statements="192" coveredstatements="153" conditionals="66" coveredconditionals="54" methods="26" coveredmethods="19" elements="284" coveredelements="226" complexity="0" loc="192" ncloc="192" packages="12" files="12" classes="12"/>
     <package name="fccCashRegister">
       <metrics statements="30" coveredstatements="30" conditionals="14" coveredconditionals="14" methods="3" coveredmethods="3"/>
       <file name="cashRegister.js" path="/Users/alexolivares/Desktop/items/algos/questions/JavaScript/fccCashRegister/cashRegister.js">
@@ -156,6 +156,32 @@
         <line num="40" count="18" type="stmt"/>
         <line num="43" count="1" type="stmt"/>
         <line num="44" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="lcMoveZeros">
+      <metrics statements="20" coveredstatements="20" conditionals="8" coveredconditionals="8" methods="1" coveredmethods="1"/>
+      <file name="lcMoveZeros.js" path="/Users/alexolivares/Desktop/items/algos/questions/JavaScript/lcMoveZeros/lcMoveZeros.js">
+        <metrics statements="20" coveredstatements="20" conditionals="8" coveredconditionals="8" methods="1" coveredmethods="1"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="12" type="stmt"/>
+        <line num="24" count="12" type="stmt"/>
+        <line num="25" count="12" type="stmt"/>
+        <line num="26" count="50" type="cond" truecount="4" falsecount="0"/>
+        <line num="27" count="19" type="stmt"/>
+        <line num="28" count="31" type="cond" truecount="4" falsecount="0"/>
+        <line num="29" count="22" type="stmt"/>
+        <line num="30" count="22" type="stmt"/>
+        <line num="32" count="28" type="stmt"/>
+        <line num="33" count="28" type="stmt"/>
+        <line num="35" count="12" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
       </file>
     </package>
     <package name="lcRegExpMatching">
