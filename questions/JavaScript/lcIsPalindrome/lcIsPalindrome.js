@@ -25,22 +25,20 @@ const isPalindrome = s => {
   let end = s.length - 1;
 
   while (st <= end) {
-    if (reg.test(s[st])) {
-      while (reg.test(s[st])) {
-        st++;
-      }
+    while (reg.test(s[st])) {
+      st++;
     }
 
-    if (reg.test(s[end])) {
-      while (reg.test(s[end])) {
-        end--;
-      }
+    while (reg.test(s[end])) {
+      end--;
     }
 
     if (s[st] !== s[end]) return false;
+
     st++;
     end--;
   }
+
   return true;
 };
 
