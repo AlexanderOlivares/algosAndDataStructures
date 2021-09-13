@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for lcFindMedianSortedArray/lcFindMedianSortedArray.js</title>
+    <title>Code coverage report for edbtMapChars/edbtMapChars.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">lcFindMedianSortedArray</a> lcFindMedianSortedArray.js</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">edbtMapChars</a> edbtMapChars.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>10/10</span>
+                <span class='fraction'>9/9</span>
             </div>
         
             
@@ -39,14 +39,14 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>9/9</span>
+                <span class='fraction'>8/8</span>
             </div>
         
             
@@ -90,12 +90,7 @@
 <a name='L31'></a><a href='#L31'>31</a>
 <a name='L32'></a><a href='#L32'>32</a>
 <a name='L33'></a><a href='#L33'>33</a>
-<a name='L34'></a><a href='#L34'>34</a>
-<a name='L35'></a><a href='#L35'>35</a>
-<a name='L36'></a><a href='#L36'>36</a>
-<a name='L37'></a><a href='#L37'>37</a>
-<a name='L38'></a><a href='#L38'>38</a>
-<a name='L39'></a><a href='#L39'>39</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L34'></a><a href='#L34'>34</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -115,40 +110,31 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">55x</span>
+<span class="cline-any cline-yes">55x</span>
+<span class="cline-any cline-yes">30x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">25x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">39x</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// LeetCode 4. Median of Two Sorted Arrays
-// tests in lcFindMedianSortedArray.test.js
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// Edabit Map the Letters in a String
+// tests in "./edbtMapChars.test.js"
 &nbsp;
 /* QUESTION:
 &nbsp;
-Given two sorted arrays nums1 and nums2 of size m and n respectively,
-return the median of the two sorted arrays.
+Given a word, create an object that stores the indexes of each
+letter in an array.
 &nbsp;
-Constraints:
-&nbsp;
-nums1.length == m
-nums2.length == n
-0 &lt;= m &lt;= 1000
-0 &lt;= n &lt;= 1000
-1 &lt;= m + n &lt;= 2000
--106 &lt;= nums1[i], nums2[i] &lt;= 106
+Make sure the letters are the keys.
+Make sure the letters are symbols.
+Make sure the indexes are stored in an array and those arrays
+are values.
 &nbsp;
 */
 &nbsp;
@@ -156,21 +142,20 @@ nums2.length == n
 // SOLUTION #1
 ///////////////////////
 &nbsp;
-const findMedianSortedArrays = (nums1, nums2) =&gt; {
-  const sorted = [...nums1, ...nums2].sort((a, b) =&gt; a - b);
-  const len = sorted.length;
-&nbsp;
-  if (len % 2 !== 0) {
-    return sorted[Math.floor(len / 2)];
+function mapLetters(word) {
+  let map = {};
+  for (let i = 0; i &lt; word.length; i++) {
+    let cur = word[i];
+    if (!map[cur]) {
+      map[cur] = [i];
+    } else {
+      map[cur].push(i);
+    }
   }
+  return map;
+}
 &nbsp;
-  const lowerBound = Math.floor(len / 2) - 1;
-  const upperBound = len / 2;
-&nbsp;
-  return (sorted[lowerBound] + sorted[upperBound]) / 2;
-};
-&nbsp;
-module.exports = findMedianSortedArrays;
+module.exports = mapLetters;
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
