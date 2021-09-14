@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1631575393987" clover="3.2.0">
-  <project timestamp="1631575393987" name="All files">
-    <metrics statements="213" coveredstatements="170" conditionals="72" coveredconditionals="58" methods="29" coveredmethods="21" elements="314" coveredelements="249" complexity="0" loc="213" ncloc="213" packages="14" files="14" classes="14"/>
+<coverage generated="1631660546179" clover="3.2.0">
+  <project timestamp="1631660546179" name="All files">
+    <metrics statements="225" coveredstatements="182" conditionals="80" coveredconditionals="65" methods="31" coveredmethods="23" elements="336" coveredelements="270" complexity="0" loc="225" ncloc="225" packages="15" files="15" classes="15"/>
+    <package name="cwPrimesInRange">
+      <metrics statements="12" coveredstatements="12" conditionals="8" coveredconditionals="7" methods="2" coveredmethods="2"/>
+      <file name="cwPrimesInRange.js" path="/Users/alexolivares/Desktop/items/algos/questions/JavaScript/cwPrimesInRange/cwPrimesInRange.js">
+        <metrics statements="12" coveredstatements="12" conditionals="8" coveredconditionals="7" methods="2" coveredmethods="2"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="53" type="cond" truecount="3" falsecount="1"/>
+        <line num="22" count="53" type="stmt"/>
+        <line num="23" count="191" type="cond" truecount="2" falsecount="0"/>
+        <line num="26" count="27" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="32" count="2" type="stmt"/>
+        <line num="33" count="53" type="cond" truecount="2" falsecount="0"/>
+        <line num="34" count="27" type="stmt"/>
+        <line num="38" count="2" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+      </file>
+    </package>
     <package name="edbtMapChars">
       <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
       <file name="edbtMapChars.js" path="/Users/alexolivares/Desktop/items/algos/questions/JavaScript/edbtMapChars/edbtMapChars.js">
