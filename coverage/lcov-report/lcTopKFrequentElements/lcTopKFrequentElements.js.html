@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for lcRegExpMatching/lcRegExpMatching.js</title>
+    <title>Code coverage report for lcTopKFrequentElements/lcTopKFrequentElements.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">lcRegExpMatching</a> lcRegExpMatching.js</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">lcTopKFrequentElements</a> lcTopKFrequentElements.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>7/7</span>
+                <span class='fraction'>12/12</span>
             </div>
         
             
@@ -39,14 +39,14 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>6/6</span>
+                <span class='fraction'>10/10</span>
             </div>
         
             
@@ -95,14 +95,8 @@
 <a name='L36'></a><a href='#L36'>36</a>
 <a name='L37'></a><a href='#L37'>37</a>
 <a name='L38'></a><a href='#L38'>38</a>
-<a name='L39'></a><a href='#L39'>39</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -123,36 +117,37 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">18x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// LeetCode 10. Regular Expression Matching
-// tests in lcRegExpMatching.test.js
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// LeetCode 347. Top K Frequent Elements
+// tests in "./lcBuyAndSellStock.test.js"
 &nbsp;
 /* QUESTION:
 &nbsp;
-Given an input string s and a pattern p, implement regular expression matching
-with support for '.' and '*' where:
-&nbsp;
-'.' Matches any single character.​​​​
-'*' Matches zero or more of the preceding element.
-The matching should cover the entire input string (not partial).
+Given an integer array nums and an integer k, return the k 
+most frequent elements. You may return the answer in any order.
 &nbsp;
 Constraints:
 &nbsp;
-1 &lt;= s.length &lt;= 20
-1 &lt;= p.length &lt;= 30
-s contains only lowercase English letters.
-p contains only lowercase English letters, '.', and '*'.
-It is guaranteed for each appearance of the character '*', 
-there will be a previous valid character to match.
+1 &lt;= nums.length &lt;= 105
+k is in the range [1, the number of unique elements in the array].
+It is guaranteed that the answer is unique.
 &nbsp;
 */
 &nbsp;
@@ -160,17 +155,25 @@ there will be a previous valid character to match.
 // SOLUTION #1
 ///////////////////////
 &nbsp;
-const isMatch = (s, p) =&gt; {
-  let reg = new RegExp(`${p}`);
+const topKFrequent = (nums, k) =&gt; {
+  let map = new Map();
 &nbsp;
-  let match = s.match(reg);
+  for (let i of nums) {
+    map.set(i, map.get(i) + 1 || 1);
+  }
 &nbsp;
-  if (!match) return false;
+  let sorted = Array.from(map.entries()).sort((a, b) =&gt; b[1] - a[1]);
 &nbsp;
-  return match[0] === s;
+  let kFreq = [];
+&nbsp;
+  for (let i = 0; i &lt; k; i++) {
+    kFreq.push(sorted[i][0]);
+  }
+&nbsp;
+  return kFreq;
 };
 &nbsp;
-module.exports = isMatch;
+module.exports = topKFrequent;
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
