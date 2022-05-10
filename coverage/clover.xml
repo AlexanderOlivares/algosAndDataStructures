@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1633139223651" clover="3.2.0">
-  <project timestamp="1633139223652" name="All files">
-    <metrics statements="268" coveredstatements="220" conditionals="92" coveredconditionals="73" methods="37" coveredmethods="28" elements="397" coveredelements="321" complexity="0" loc="268" ncloc="268" packages="18" files="18" classes="18"/>
+<coverage generated="1652152022594" clover="3.2.0">
+  <project timestamp="1652152022594" name="All files">
+    <metrics statements="279" coveredstatements="231" conditionals="96" coveredconditionals="77" methods="38" coveredmethods="29" elements="413" coveredelements="337" complexity="0" loc="279" ncloc="279" packages="19" files="19" classes="19"/>
     <package name="cwFoldArray">
       <metrics statements="21" coveredstatements="16" conditionals="8" coveredconditionals="4" methods="3" coveredmethods="2"/>
       <file name="cwFoldArray.js" path="/Users/alexolivares/Desktop/items/algos/questions/JavaScript/cwFoldArray/cwFoldArray.js">
@@ -45,6 +45,23 @@
         <line num="34" count="27" type="stmt"/>
         <line num="38" count="2" type="stmt"/>
         <line num="41" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="edbtLowestNeighbor">
+      <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <file name="edbtLowestNeighbor.js" path="/Users/alexolivares/Desktop/items/algos/questions/JavaScript/edbtLowestNeighbor/edbtLowestNeighbor.js">
+        <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="7" type="stmt"/>
+        <line num="25" count="7" type="stmt"/>
+        <line num="26" count="7" type="stmt"/>
+        <line num="27" count="7" type="stmt"/>
+        <line num="28" count="56" type="stmt"/>
+        <line num="29" count="56" type="stmt"/>
+        <line num="30" count="56" type="cond" truecount="4" falsecount="0"/>
+        <line num="31" count="36" type="stmt"/>
+        <line num="33" count="7" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
       </file>
     </package>
     <package name="edbtMapChars">
