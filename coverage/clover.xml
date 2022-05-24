@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1652152022594" clover="3.2.0">
-  <project timestamp="1652152022594" name="All files">
-    <metrics statements="279" coveredstatements="231" conditionals="96" coveredconditionals="77" methods="38" coveredmethods="29" elements="413" coveredelements="337" complexity="0" loc="279" ncloc="279" packages="19" files="19" classes="19"/>
+<coverage generated="1653352849863" clover="3.2.0">
+  <project timestamp="1653352849863" name="All files">
+    <metrics statements="293" coveredstatements="245" conditionals="100" coveredconditionals="81" methods="39" coveredmethods="30" elements="432" coveredelements="356" complexity="0" loc="293" ncloc="293" packages="20" files="20" classes="20"/>
     <package name="cwFoldArray">
       <metrics statements="21" coveredstatements="16" conditionals="8" coveredconditionals="4" methods="3" coveredmethods="2"/>
       <file name="cwFoldArray.js" path="/Users/alexolivares/Desktop/items/algos/questions/JavaScript/cwFoldArray/cwFoldArray.js">
@@ -45,6 +45,26 @@
         <line num="34" count="27" type="stmt"/>
         <line num="38" count="2" type="stmt"/>
         <line num="41" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="edbtCaesarsCipher">
+      <metrics statements="14" coveredstatements="14" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <file name="edbtCaesarsCipher.js" path="/Users/alexolivares/Desktop/items/algos/questions/JavaScript/edbtCaesarsCipher/edbtCaesarsCipher.js">
+        <metrics statements="14" coveredstatements="14" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="21" count="6" type="stmt"/>
+        <line num="22" count="6" type="stmt"/>
+        <line num="24" count="6" type="stmt"/>
+        <line num="26" count="6" type="stmt"/>
+        <line num="27" count="324" type="cond" truecount="2" falsecount="0"/>
+        <line num="28" count="63" type="stmt"/>
+        <line num="29" count="63" type="stmt"/>
+        <line num="32" count="261" type="stmt"/>
+        <line num="33" count="261" type="stmt"/>
+        <line num="35" count="261" type="cond" truecount="2" falsecount="0"/>
+        <line num="36" count="18" type="stmt"/>
+        <line num="38" count="243" type="stmt"/>
+        <line num="42" count="6" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
       </file>
     </package>
     <package name="edbtLowestNeighbor">
