@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1653352849863" clover="3.2.0">
-  <project timestamp="1653352849863" name="All files">
-    <metrics statements="293" coveredstatements="245" conditionals="100" coveredconditionals="81" methods="39" coveredmethods="30" elements="432" coveredelements="356" complexity="0" loc="293" ncloc="293" packages="20" files="20" classes="20"/>
+<coverage generated="1656802539015" clover="3.2.0">
+  <project timestamp="1656802539015" name="All files">
+    <metrics statements="333" coveredstatements="285" conditionals="120" coveredconditionals="101" methods="43" coveredmethods="34" elements="496" coveredelements="420" complexity="0" loc="333" ncloc="333" packages="22" files="22" classes="22"/>
     <package name="cwFoldArray">
       <metrics statements="21" coveredstatements="16" conditionals="8" coveredconditionals="4" methods="3" coveredmethods="2"/>
       <file name="cwFoldArray.js" path="/Users/alexolivares/Desktop/items/algos/questions/JavaScript/cwFoldArray/cwFoldArray.js">
@@ -65,6 +65,58 @@
         <line num="38" count="243" type="stmt"/>
         <line num="42" count="6" type="stmt"/>
         <line num="45" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="edbtJakesMealTime">
+      <metrics statements="14" coveredstatements="14" conditionals="12" coveredconditionals="12" methods="3" coveredmethods="3"/>
+      <file name="edbtJakesMealTime.js" path="/Users/alexolivares/Desktop/items/algos/questions/JavaScript/edbtJakesMealTime/edbtJakesMealTime.js">
+        <metrics statements="14" coveredstatements="14" conditionals="12" coveredconditionals="12" methods="3" coveredmethods="3"/>
+        <line num="19" count="6" type="stmt"/>
+        <line num="21" count="18" type="cond" truecount="2" falsecount="0"/>
+        <line num="23" count="6" type="cond" truecount="4" falsecount="0"/>
+        <line num="25" count="6" type="stmt"/>
+        <line num="26" count="18" type="stmt"/>
+        <line num="27" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="28" count="6" type="stmt"/>
+        <line num="29" count="6" type="stmt"/>
+        <line num="31" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="32" count="2" type="stmt"/>
+        <line num="33" count="2" type="stmt"/>
+        <line num="36" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="38" count="6" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="edbtLongestNonRepeatingSubstring">
+      <metrics statements="26" coveredstatements="26" conditionals="8" coveredconditionals="8" methods="1" coveredmethods="1"/>
+      <file name="edbtLongestNonRepeatingSubstring.js" path="/Users/alexolivares/Desktop/items/algos/questions/JavaScript/edbtLongestNonRepeatingSubstring/edbtLongestNonRepeatingSubstring.js">
+        <metrics statements="26" coveredstatements="26" conditionals="8" coveredconditionals="8" methods="1" coveredmethods="1"/>
+        <line num="22" count="17" type="stmt"/>
+        <line num="23" count="17" type="stmt"/>
+        <line num="24" count="17" type="stmt"/>
+        <line num="25" count="17" type="stmt"/>
+        <line num="27" count="17" type="stmt"/>
+        <line num="28" count="17" type="stmt"/>
+        <line num="30" count="17" type="cond" truecount="2" falsecount="0"/>
+        <line num="31" count="17" type="stmt"/>
+        <line num="33" count="17" type="stmt"/>
+        <line num="34" count="370" type="cond" truecount="4" falsecount="0"/>
+        <line num="35" count="152" type="stmt"/>
+        <line num="36" count="152" type="stmt"/>
+        <line num="37" count="152" type="stmt"/>
+        <line num="38" count="152" type="stmt"/>
+        <line num="39" count="152" type="stmt"/>
+        <line num="40" count="152" type="stmt"/>
+        <line num="42" count="370" type="stmt"/>
+        <line num="43" count="370" type="stmt"/>
+        <line num="46" count="17" type="stmt"/>
+        <line num="47" count="17" type="stmt"/>
+        <line num="48" count="17" type="stmt"/>
+        <line num="49" count="152" type="cond" truecount="2" falsecount="0"/>
+        <line num="50" count="24" type="stmt"/>
+        <line num="51" count="24" type="stmt"/>
+        <line num="55" count="17" type="stmt"/>
+        <line num="58" count="1" type="stmt"/>
       </file>
     </package>
     <package name="edbtLowestNeighbor">

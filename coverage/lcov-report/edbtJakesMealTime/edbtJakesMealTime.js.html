@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for cwPrimesInRange/cwPrimesInRange.js</title>
+    <title>Code coverage report for edbtJakesMealTime/edbtJakesMealTime.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">cwPrimesInRange</a> cwPrimesInRange.js</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">edbtJakesMealTime</a> edbtJakesMealTime.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">93.75% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>15/16</span>
+                <span class='fraction'>16/16</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">87.5% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>7/8</span>
+                <span class='fraction'>12/12</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>3/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>12/12</span>
+                <span class='fraction'>14/14</span>
             </div>
         
             
@@ -116,70 +116,70 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">53x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">53x</span>
-<span class="cline-any cline-yes">191x</span>
+<span class="cline-any cline-yes">18x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">27x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">18x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">53x</span>
-<span class="cline-any cline-yes">27x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// Codewars (5kyu) Find primes in range (complexity matters)
-// tests in "./cwPrimesInRange.test.js"
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// Edabit Jake's Meal Time
+// tests in "./edbtJakesMealTime.test.js"
 &nbsp;
 /* QUESTION:
+Jake is a very habitual person. He eats breakfast at 7:00 a.m. 
+each morning, lunch at 12:00 p.m. and dinner at 7:00 p.m. in 
+the evening.
 &nbsp;
-Find all primes between 1 and n
-Return array of primes.
-Yep.. that's all.
-&nbsp;
-Warning: test requires you to generate all primes 
-between 1 and 20 million without timing out.
-&nbsp;
+Create a function that takes in the current time as a string 
+and determines the duration of time before Jake's next meal.
+Represent this as an array with the first and second elements
+representing hours and minutes, respectively.
 */
 &nbsp;
 ///////////////////////
 // SOLUTION #1
 ///////////////////////
+function timeToEat(currentTime) {
+  let [hour, min, amPm] = currentTime
+    .split(/[: ]/)
+    .map((e, i) =&gt; (i &lt; 2 ? Number(e) : e));
 &nbsp;
-const isPrime = n =&gt; {
-  <span class="missing-if-branch" title="if path not taken" >I</span>if (n === 1 || n === 0) <span class="cstat-no" title="statement not covered" >return false;</span>
+  hour = amPm === "p.m." ? hour + 12 : hour === 12 ? 0 : hour;
 &nbsp;
-  for (let i = 2; i &lt;= Math.sqrt(n); i++) {
-    if (n % i === 0) return false;
+  const mealTimes = [7, 12, 19];
+  const upcomingMeals = mealTimes.filter(mealTime =&gt; mealTime &gt; hour);
+  const nextMeal = upcomingMeals[0] || 7;
+  let hoursUntilNextMeal = nextMeal - hour - 1;
+  let minTillNextHour = 60 - min;
+&nbsp;
+  if (minTillNextHour === 60) {
+    minTillNextHour = 0;
+    hoursUntilNextMeal += 1;
   }
 &nbsp;
-  return true;
-};
+  if (nextMeal &lt; hour) hoursUntilNextMeal = 24 - hour + 6;
 &nbsp;
-const primeList = n =&gt; {
-  let res = [2];
+  return [hoursUntilNextMeal, minTillNextHour];
+}
 &nbsp;
-  for (let i = 3; i &lt;= n; i += 2) {
-    if (isPrime(i)) {
-      res.push(i);
-    }
-  }
-&nbsp;
-  return res;
-};
-&nbsp;
-module.exports = primeList;
+module.exports = timeToEat;
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
