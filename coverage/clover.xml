@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1656802539015" clover="3.2.0">
-  <project timestamp="1656802539015" name="All files">
-    <metrics statements="333" coveredstatements="285" conditionals="120" coveredconditionals="101" methods="43" coveredmethods="34" elements="496" coveredelements="420" complexity="0" loc="333" ncloc="333" packages="22" files="22" classes="22"/>
+<coverage generated="1656805011462" clover="3.2.0">
+  <project timestamp="1656805011462" name="All files">
+    <metrics statements="342" coveredstatements="294" conditionals="122" coveredconditionals="103" methods="49" coveredmethods="40" elements="513" coveredelements="437" complexity="0" loc="342" ncloc="342" packages="23" files="23" classes="23"/>
     <package name="cwFoldArray">
       <metrics statements="21" coveredstatements="16" conditionals="8" coveredconditionals="4" methods="3" coveredmethods="2"/>
       <file name="cwFoldArray.js" path="/Users/alexolivares/Desktop/items/algos/questions/JavaScript/cwFoldArray/cwFoldArray.js">
@@ -71,20 +71,20 @@
       <metrics statements="14" coveredstatements="14" conditionals="12" coveredconditionals="12" methods="3" coveredmethods="3"/>
       <file name="edbtJakesMealTime.js" path="/Users/alexolivares/Desktop/items/algos/questions/JavaScript/edbtJakesMealTime/edbtJakesMealTime.js">
         <metrics statements="14" coveredstatements="14" conditionals="12" coveredconditionals="12" methods="3" coveredmethods="3"/>
-        <line num="19" count="6" type="stmt"/>
-        <line num="21" count="18" type="cond" truecount="2" falsecount="0"/>
-        <line num="23" count="6" type="cond" truecount="4" falsecount="0"/>
-        <line num="25" count="6" type="stmt"/>
-        <line num="26" count="18" type="stmt"/>
-        <line num="27" count="6" type="cond" truecount="2" falsecount="0"/>
-        <line num="28" count="6" type="stmt"/>
+        <line num="20" count="6" type="stmt"/>
+        <line num="22" count="18" type="cond" truecount="2" falsecount="0"/>
+        <line num="24" count="6" type="cond" truecount="4" falsecount="0"/>
+        <line num="26" count="6" type="stmt"/>
+        <line num="27" count="18" type="stmt"/>
+        <line num="28" count="6" type="cond" truecount="2" falsecount="0"/>
         <line num="29" count="6" type="stmt"/>
-        <line num="31" count="6" type="cond" truecount="2" falsecount="0"/>
-        <line num="32" count="2" type="stmt"/>
+        <line num="30" count="6" type="stmt"/>
+        <line num="32" count="6" type="cond" truecount="2" falsecount="0"/>
         <line num="33" count="2" type="stmt"/>
-        <line num="36" count="6" type="cond" truecount="2" falsecount="0"/>
-        <line num="38" count="6" type="stmt"/>
-        <line num="41" count="1" type="stmt"/>
+        <line num="34" count="2" type="stmt"/>
+        <line num="37" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="39" count="6" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
       </file>
     </package>
     <package name="edbtLongestNonRepeatingSubstring">
@@ -148,6 +148,21 @@
         <line num="27" count="25" type="stmt"/>
         <line num="30" count="9" type="stmt"/>
         <line num="33" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="edbtNumbersFirstLettersSecond">
+      <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="6" coveredmethods="6"/>
+      <file name="edbtNumbersFirstLettersSecond.js" path="/Users/alexolivares/Desktop/items/algos/questions/JavaScript/edbtNumbersFirstLettersSecond/edbtNumbersFirstLettersSecond.js">
+        <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="6" coveredmethods="6"/>
+        <line num="15" count="23" type="stmt"/>
+        <line num="17" count="4" type="stmt"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="20" count="4" type="stmt"/>
+        <line num="21" count="82" type="cond" truecount="2" falsecount="0"/>
+        <line num="24" count="89" type="stmt"/>
+        <line num="26" count="4" type="stmt"/>
+        <line num="27" count="82" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
       </file>
     </package>
     <package name="fccCashRegister">
