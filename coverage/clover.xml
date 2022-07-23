@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1656805011462" clover="3.2.0">
-  <project timestamp="1656805011462" name="All files">
-    <metrics statements="342" coveredstatements="294" conditionals="122" coveredconditionals="103" methods="49" coveredmethods="40" elements="513" coveredelements="437" complexity="0" loc="342" ncloc="342" packages="23" files="23" classes="23"/>
+<coverage generated="1658542525459" clover="3.2.0">
+  <project timestamp="1658542525459" name="All files">
+    <metrics statements="347" coveredstatements="299" conditionals="124" coveredconditionals="105" methods="50" coveredmethods="41" elements="521" coveredelements="445" complexity="0" loc="347" ncloc="347" packages="24" files="24" classes="24"/>
     <package name="cwFoldArray">
       <metrics statements="21" coveredstatements="16" conditionals="8" coveredconditionals="4" methods="3" coveredmethods="2"/>
       <file name="cwFoldArray.js" path="/Users/alexolivares/Desktop/items/algos/questions/JavaScript/cwFoldArray/cwFoldArray.js">
@@ -85,6 +85,17 @@
         <line num="37" count="6" type="cond" truecount="2" falsecount="0"/>
         <line num="39" count="6" type="stmt"/>
         <line num="42" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="edbtKnowYourNeighbor">
+      <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="edbtKnowYourNeighbor.js" path="/Users/alexolivares/Desktop/items/algos/questions/JavaScript/edbtKnowYourNeighbor/edbtKnowYourNeighbor.js">
+        <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="14" count="6" type="stmt"/>
+        <line num="15" count="6" type="stmt"/>
+        <line num="16" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="17" count="5" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
       </file>
     </package>
     <package name="edbtLongestNonRepeatingSubstring">
