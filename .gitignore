@@ -3,3 +3,6 @@ node_modules
 
 [Oo]bj
 [Bb]in
+
+.vscode
+/coverage
