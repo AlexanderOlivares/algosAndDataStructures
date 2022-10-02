@@ -10,15 +10,36 @@ An Anagram is a word or phrase formed by rearranging the letters of a different
 word or phrase, typically using all the original letters exactly once.
 
 */
+///////////////////////
+// SOLUTION #1
+///////////////////////
 
-const isAnagram = (s1, s2) => {
-  for (let i = 0; i < s1.length; i++) {
-    s2 = s2.replace(s1[i], "");
+const sortStr = str => str.split("").sort().join("");
+
+// added sorting for ease of testing
+const groupAnagrams = strs => {
+  let map = new Map();
+  for (let i of strs) {
+    const sorted = sortStr(i);
+    if (map.has(sorted)) {
+      map.set(sorted, [...map.get(sorted), i].sort());
+    } else {
+      map.set(sorted, [i]);
+    }
   }
-  return !s2.length;
+  return Array.from(map.values()).sort();
 };
 
-const groupAnagrams = strs => {
+///////////////////////
+// SOLUTION #2
+///////////////////////
+
+const isAnagram = (s1, s2) => {
+  const strSort = s => s.split("").sort().join("");
+  return strSort(s1) == strSort(s2);
+};
+
+const groupAnagrams2 = strs => {
   let matches = [];
   let anaMap = new Map();
   for (let i = 0; i < strs.length; i++) {
@@ -40,36 +61,7 @@ const groupAnagrams = strs => {
   return matches.sort();
 };
 
-//   let res = [];
-//   let map = new Map();
-//   for (let i = 0; i < matches.length; i++) {
-//     let subArr = [];
-//     for (let j = 0; j < matches[i].length; j++) {
-//       if (!map.has(matches[i][j])) {
-//         map.set(matches[i][j], matches[i][j]);
-//         //console.log(matches[i][j])
-//         subArr.push(matches[i][j]);
-//       }
-//     }
-//     subArr.length && res.push(subArr);
-//     //res.push(subArr);
-//   }
-//   console.log(res);
-//   return res.map(e => e.sort()).sort();
-// };
-// };
-///////////////////////
-// SOLUTION #2
-///////////////////////
-
-// const groupAnagrams = strs => {
-//   return true;
-// };
-
-// console.log(groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]));
-// console.log(groupAnagrams([""]));
-// console.log(groupAnagrams(["a"]));
-// console.log(groupAnagrams(["", ""]));
-// console.log(groupAnagrams(["pool", "loop", "alex"])); //.toEqual([["alex"], ["loop", "pool"]]);
-
-module.exports = groupAnagrams;
+module.exports = {
+  groupAnagrams,
+  groupAnagrams2,
+};
