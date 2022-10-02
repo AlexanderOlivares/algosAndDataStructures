@@ -40,5 +40,7 @@ const maxPowerRegex = s => {
   return Math.max(...consecutiveRepeatedLetters.map(match => match.length));
 };
 
-module.exports = maxPower;
-module.exports = maxPowerRegex;
+module.exports = {
+  maxPower,
+  maxPowerRegex,
+};

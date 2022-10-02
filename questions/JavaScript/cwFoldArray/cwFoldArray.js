@@ -81,4 +81,7 @@ const foldArray2 = (array, runs) => {
   return runs - 1 ? foldArray2(foldedArr, runs - 1) : foldedArr;
 };
 
-module.exports = foldArray;
+module.exports = {
+  foldArray,
+  foldArray2,
+};

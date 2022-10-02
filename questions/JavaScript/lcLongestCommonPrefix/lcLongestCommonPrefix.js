@@ -54,4 +54,7 @@ const longestCommonPrefix2 = strs => {
   return res;
 };
 
-module.exports = longestCommonPrefix;
+module.exports = {
+  longestCommonPrefix,
+  longestCommonPrefix2,
+};

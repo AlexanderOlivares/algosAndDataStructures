@@ -1,5 +1,4 @@
-const maxPower = require("./maxContSubstring");
-const maxPowerRegex = require("./maxContSubstring");
+const { maxPower, maxPowerRegex } = require("./maxContSubstring");
 
 test("maxContSubstring", () => {
   expect(maxPower("leetcode")).toEqual(2);

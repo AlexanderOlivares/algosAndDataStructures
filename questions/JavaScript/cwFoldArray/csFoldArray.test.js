@@ -1,5 +1,4 @@
-const foldArray = require("./cwFoldArray");
-const foldArray2 = require("./cwFoldArray");
+const { foldArray, foldArray2 } = require("./cwFoldArray");
 
 test("cwFoldArray solution 1", () => {
   expect(foldArray([1], 1)).toEqual([1]);

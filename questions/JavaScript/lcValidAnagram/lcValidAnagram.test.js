@@ -1,5 +1,4 @@
-const isAnagram = require("./lcValidAnagram");
-const isAnagram2 = require("./lcValidAnagram");
+const { isAnagram, isAnagram2 } = require("./lcValidAnagram");
 
 test("isAnagram", () => {
   expect(isAnagram("anagram", "nagaram")).toEqual(true);

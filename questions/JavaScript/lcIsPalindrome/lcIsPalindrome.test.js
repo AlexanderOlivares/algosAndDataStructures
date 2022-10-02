@@ -1,5 +1,5 @@
-const isPalindrome = require("./lcIsPalindrome");
-const isPalindrome2 = require("./lcIsPalindrome");
+const { isPalindrome, isPalindrome2 } = require("./lcIsPalindrome");
+// const { isPalindrome2 } = require("./lcIsPalindrome");
 
 test("isPalindrome", () => {
   expect(isPalindrome("race a car")).toEqual(false);

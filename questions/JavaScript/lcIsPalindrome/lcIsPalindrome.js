@@ -56,4 +56,7 @@ const isPalindrome2 = s => {
   return valid === valid.split("").reverse().join("");
 };
 
-module.exports = isPalindrome;
+module.exports = {
+  isPalindrome,
+  isPalindrome2,
+};

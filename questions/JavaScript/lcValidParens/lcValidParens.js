@@ -55,4 +55,7 @@ const isValid2 = s => {
   return !s.length;
 };
 
-module.exports = isValid;
+module.exports = {
+  isValid,
+  isValid2,
+};

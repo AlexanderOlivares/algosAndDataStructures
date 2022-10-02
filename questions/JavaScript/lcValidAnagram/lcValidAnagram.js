@@ -37,5 +37,7 @@ var isAnagram2 = function (s, t) {
   return sorted(s) === sorted(t);
 };
 
-module.exports = isAnagram;
-module.exports = isAnagram2;
+module.exports = {
+  isAnagram,
+  isAnagram2,
+};

@@ -1,5 +1,4 @@
-const isValid = require("./lcValidParens");
-const isValid2 = require("./lcValidParens");
+const { isValid, isValid2 } = require("./lcValidParens");
 
 test("isValid", () => {
   expect(isValid("()")).toEqual(true);

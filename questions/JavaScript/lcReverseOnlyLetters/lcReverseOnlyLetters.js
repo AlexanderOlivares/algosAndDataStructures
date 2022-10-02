@@ -49,5 +49,7 @@ const reverseOnlyLetters2 = s => {
   return nonLetters.join("");
 };
 
-module.exports = reverseOnlyLetters;
-module.exports = reverseOnlyLetters2;
+module.exports = {
+  reverseOnlyLetters,
+  reverseOnlyLetters2,
+};
