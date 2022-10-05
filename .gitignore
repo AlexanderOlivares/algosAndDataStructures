@@ -8,3 +8,5 @@ node_modules
 /coverage
 
 .boilerplate/
+
+**/__pycache__
